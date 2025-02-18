@@ -13,7 +13,7 @@ def change_page(page_name):
 st.sidebar.title("Menu")
 
 with st.sidebar.expander("🔒 Login", expanded=True):
-    if st.button("Login"):
+    if st.button("Connect"):
         change_page("Login")
 
 with st.sidebar.expander("⚙️ Basic Configuration", expanded=False):
@@ -33,8 +33,8 @@ with st.sidebar.expander("🗂️ Backup Configuration", expanded=False):
     if st.button("Backup Configuration"):
         change_page("Backup Configuration")
 
-with st.sidebar.expander("Logout", expanded=False):
-    if st.button("Logout"):
+with st.sidebar.expander("🚪Logout", expanded=False):
+    if st.button("Disconnect"):
         change_page("Logout")
 
 #import_page
